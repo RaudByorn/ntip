@@ -1,0 +1,9 @@
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\bin\Debug\ConsoleLoader.exe.config
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\bin\Debug\ConsoleLoader.exe
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\bin\Debug\ConsoleLoader.pdb
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\bin\Debug\IComponent.dll
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\bin\Debug\IComponent.pdb
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\obj\Debug\ConsoleLoader.csprojResolveAssemblyReference.cache
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\obj\Debug\ConsoleLoader.csproj.CoreCompileInputs.cache
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\obj\Debug\ConsoleLoader.exe
+C:\Users\Nikit\source\repos\IComponent\ConsoleLoader\obj\Debug\ConsoleLoader.pdb

@@ -1,0 +1,17 @@
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\View.exe.config
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\View.exe
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\View.pdb
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.ImpedanceForm.resources
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.Properties.Resources.resources
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.exe
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.pdb
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.Add_Element.resources
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\IComponent.dll
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\IComponent.pdb
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Json.dll
+C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Json.pdb

@@ -1,0 +1,7 @@
+C:\Users\Nikit\source\repos\IComponent\dataBaseComponents\bin\Debug\dataBaseComponents.dll
+C:\Users\Nikit\source\repos\IComponent\dataBaseComponents\bin\Debug\dataBaseComponents.pdb
+C:\Users\Nikit\source\repos\IComponent\dataBaseComponents\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nikit\source\repos\IComponent\dataBaseComponents\obj\Debug\dataBaseComponents.csprojResolveAssemblyReference.cache
+C:\Users\Nikit\source\repos\IComponent\dataBaseComponents\obj\Debug\dataBaseComponents.csproj.CoreCompileInputs.cache
+C:\Users\Nikit\source\repos\IComponent\dataBaseComponents\obj\Debug\dataBaseComponents.dll
+C:\Users\Nikit\source\repos\IComponent\dataBaseComponents\obj\Debug\dataBaseComponents.pdb
