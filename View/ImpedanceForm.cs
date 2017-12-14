@@ -16,6 +16,9 @@ namespace View
 {
     public partial class ImpedanceForm : Form
     {
+        /// <summary>
+        /// Элемент класса dataBase
+        /// </summary>
         private dataBase _dataBase =  new dataBase();
         /// <summary>
         /// Инициализация класса
@@ -26,6 +29,9 @@ namespace View
         }
 
         private List<IComponent.IComponent> Components = new List<IComponent.IComponent>();
+        /// <summary>
+        /// Счетчик для DataGrid
+        /// </summary>
         int _addercount = 0;
         /// <summary>
         /// Открытие вспомогательной формы и связь по делегату
@@ -46,7 +52,6 @@ namespace View
                     var component = newForm.Component;
                     Components.Add(component);
                     dataGridView1.Rows.Add(component.GetImpedance(double.Parse(textBox1.Text)));
-                    //dataGridView1.Rows[_addercount].Cells[0].Value = component.GetImpedance(double.Parse(textBox1.Text));
                     dataGridView1.Rows[_addercount].Cells[1].Value = component.Nominal;
                     
                     _addercount++;
@@ -86,6 +91,11 @@ namespace View
 
         }
 
+        /// <summary>
+        /// Ограничения на ввод символов
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -95,6 +105,11 @@ namespace View
             }
         }
 
+        /// <summary>
+        /// Сохранить данные в файл
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.ShowDialog();
@@ -103,6 +118,11 @@ namespace View
             _dataBase.savefile(_savefilename, jsonfile);
         }
 
+        /// <summary>
+        /// открыть сохраненные данные
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
@@ -119,8 +139,8 @@ namespace View
                     dataGridView1.Rows[counter].Cells[0].Value = item.GetImpedance(item.Nominal);
                     dataGridView1.Rows[counter].Cells[1].Value = item.Nominal;
                     counter++;
-                }
-            
+                }  
         }
+
     }
 }

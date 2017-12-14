@@ -23,13 +23,13 @@ namespace IComponent
         /// <param name="nominal"></param>
         public Inductor(double nominal)
         {
-            if (_nominal < 0)
+            if (nominal < 0)
             {
                 throw new ArgumentException("---!!!Значение не может быть меньше нуля!!!");
             }
             else
             {
-                _nominal = nominal;
+                nominal = nominal;
             }
         }
         public double Nominal

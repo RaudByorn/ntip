@@ -15,6 +15,11 @@ namespace View
         {
             
         }
+        /// <summary>
+        /// Сериализация данных
+        /// </summary>
+        /// <param name="json"></param>
+        /// <returns>string</returns>
         public string Serialize(object json)
         {
             const Formatting indentend = Formatting.Indented;
@@ -25,11 +30,21 @@ namespace View
             var newjson = JsonConvert.SerializeObject(json,indentend,settings);
             return newjson;
         }
+        /// <summary>
+        /// Сохранить файл
+        /// </summary>
+        /// <param name="savefilename"></param>
+        /// <param name="jsonfile"></param>
         public void savefile(string savefilename,string jsonfile)
         {
-            File.WriteAllText(savefilename, jsonfile);
+            File.WriteAllText(savefilename+".json", jsonfile);
         }
 
+        /// <summary>
+        /// Десериализация данных 
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns>string</returns>
         public List<IComponent.IComponent> Deserialize(string filename)
         {
             Console.WriteLine(filename);

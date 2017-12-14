@@ -157,5 +157,10 @@ namespace View
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+                comboBox1.SelectedIndex = 0;
+                textBox1.Text = "10";
+        }
     }
 }

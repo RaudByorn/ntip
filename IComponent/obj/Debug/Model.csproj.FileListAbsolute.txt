@@ -1,0 +1,9 @@
+C:\Users\Nikit\source\repos\IComponent\IComponent\bin\Debug\IComponent.dll
+C:\Users\Nikit\source\repos\IComponent\IComponent\bin\Debug\IComponent.pdb
+C:\Users\Nikit\source\repos\IComponent\IComponent\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nikit\source\repos\IComponent\IComponent\bin\Debug\nunit.framework.dll
+C:\Users\Nikit\source\repos\IComponent\IComponent\bin\Debug\nunit.framework.xml
+C:\Users\Nikit\source\repos\IComponent\IComponent\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Nikit\source\repos\IComponent\IComponent\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Nikit\source\repos\IComponent\IComponent\obj\Debug\IComponent.dll
+C:\Users\Nikit\source\repos\IComponent\IComponent\obj\Debug\IComponent.pdb

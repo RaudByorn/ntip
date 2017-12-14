@@ -100,9 +100,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IComponent\IComponent.csproj">
+    <ProjectReference Include="..\IComponent\Model.csproj">
       <Project>{129ce801-ca59-486b-98be-2289c4a46f4a}</Project>
-      <Name>IComponent</Name>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
