@@ -29,7 +29,7 @@ namespace IComponent
             }
             else
             {
-                nominal = nominal;
+                _nominal = nominal;
             }
         }
         public double Nominal

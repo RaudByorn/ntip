@@ -39,13 +39,12 @@ namespace View
         {
             File.WriteAllText(savefilename+".json", jsonfile);
         }
-
         /// <summary>
         /// Десериализация данных 
         /// </summary>
         /// <param name="filename"></param>
         /// <returns>string</returns>
-        public List<IComponent.IComponent> Deserialize(string filename)
+        public Tuple<List<IComponent.IComponent>, string> Deserialize(string filename)
         {
             Console.WriteLine(filename);
             var settings = new JsonSerializerSettings
@@ -58,7 +57,7 @@ namespace View
             {
                 fin_file[0] += string.Join(null, fileStrings);
             }
-            var json = JsonConvert.DeserializeObject<List<IComponent.IComponent>>(fin_file[0], settings);
+            var json = JsonConvert.DeserializeObject<Tuple<List<IComponent.IComponent>, string>>(fin_file[0], settings);
             return json;
         }
     }

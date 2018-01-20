@@ -15,3 +15,4 @@ C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Json.dll
 C:\Users\Nikit\source\repos\IComponent\View\bin\Debug\Json.pdb
+C:\Users\Nikit\source\repos\IComponent\View\obj\Debug\View.ObjectControl.resources

@@ -68,6 +68,12 @@
     <Compile Include="ImpedanceForm.Designer.cs">
       <DependentUpon>ImpedanceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlForms\ObjectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlForms\ObjectControl.Designer.cs">
+      <DependentUpon>ObjectControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Add Element.resx">
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ImpedanceForm.resx">
       <DependentUpon>ImpedanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlForms\ObjectControl.resx">
+      <DependentUpon>ObjectControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

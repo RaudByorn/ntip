@@ -30,14 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ModifyButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NominalColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FrequencyTextBox = new System.Windows.Forms.TextBox();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.RemoveElementButton = new System.Windows.Forms.Button();
+            this.AddElementButton = new System.Windows.Forms.Button();
+            this.ComponentsDataGrid = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,95 +44,97 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NominalColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComponentsDataGrid)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ModifyButton);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.FrequencyTextBox);
+            this.groupBox1.Controls.Add(this.CloseButton);
+            this.groupBox1.Controls.Add(this.RemoveElementButton);
+            this.groupBox1.Controls.Add(this.AddElementButton);
+            this.groupBox1.Controls.Add(this.ComponentsDataGrid);
             this.groupBox1.Location = new System.Drawing.Point(12, 40);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(355, 302);
+            this.groupBox1.Size = new System.Drawing.Size(257, 302);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Расчет комплексного сопротивления";
+            this.groupBox1.Text = "Calculate Impedance";
+            // 
+            // ModifyButton
+            // 
+            this.ModifyButton.Location = new System.Drawing.Point(6, 225);
+            this.ModifyButton.Name = "ModifyButton";
+            this.ModifyButton.Size = new System.Drawing.Size(106, 23);
+            this.ModifyButton.TabIndex = 6;
+            this.ModifyButton.Text = "Modify";
+            this.ModifyButton.UseVisualStyleBackColor = true;
+            this.ModifyButton.Click += new System.EventHandler(this.ModifyButton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(247, 251);
+            this.label1.Location = new System.Drawing.Point(141, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Frequency";
             // 
-            // textBox1
+            // FrequencyTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(250, 267);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.FrequencyTextBox.Location = new System.Drawing.Point(144, 188);
+            this.FrequencyTextBox.Name = "FrequencyTextBox";
+            this.FrequencyTextBox.Size = new System.Drawing.Size(105, 20);
+            this.FrequencyTextBox.TabIndex = 4;
+            this.FrequencyTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FrequencyTextBoxKeyPress);
             // 
-            // button3
+            // CloseButton
             // 
-            this.button3.Location = new System.Drawing.Point(7, 268);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.CloseButton.Location = new System.Drawing.Point(144, 273);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(106, 23);
+            this.CloseButton.TabIndex = 3;
+            this.CloseButton.Text = "Exit";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseApp);
             // 
-            // button2
+            // RemoveElementButton
             // 
-            this.button2.Location = new System.Drawing.Point(6, 208);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Remove Element";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.RemoveElementButton.Location = new System.Drawing.Point(6, 196);
+            this.RemoveElementButton.Name = "RemoveElementButton";
+            this.RemoveElementButton.Size = new System.Drawing.Size(106, 23);
+            this.RemoveElementButton.TabIndex = 2;
+            this.RemoveElementButton.Text = "Remove Element";
+            this.RemoveElementButton.UseVisualStyleBackColor = true;
+            this.RemoveElementButton.Click += new System.EventHandler(this.DeleteElement);
             // 
-            // button1
+            // AddElementButton
             // 
-            this.button1.Location = new System.Drawing.Point(6, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Add Element";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddElementButton.Location = new System.Drawing.Point(6, 167);
+            this.AddElementButton.Name = "AddElementButton";
+            this.AddElementButton.Size = new System.Drawing.Size(106, 23);
+            this.AddElementButton.TabIndex = 1;
+            this.AddElementButton.Text = "Add Element";
+            this.AddElementButton.UseVisualStyleBackColor = true;
+            this.AddElementButton.Click += new System.EventHandler(this.AddElementButtonClick);
             // 
-            // dataGridView1
+            // ComponentsDataGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ComponentsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ComponentsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column4,
             this.NominalColumn});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(344, 142);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Impedance";
-            this.Column4.Name = "Column4";
-            // 
-            // NominalColumn
-            // 
-            this.NominalColumn.HeaderText = "Nominal";
-            this.NominalColumn.Name = "NominalColumn";
+            this.ComponentsDataGrid.Location = new System.Drawing.Point(6, 19);
+            this.ComponentsDataGrid.Name = "ComponentsDataGrid";
+            this.ComponentsDataGrid.ReadOnly = true;
+            this.ComponentsDataGrid.Size = new System.Drawing.Size(244, 142);
+            this.ComponentsDataGrid.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -141,7 +142,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(379, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(281, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -177,12 +178,24 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Impedance";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // NominalColumn
+            // 
+            this.NominalColumn.HeaderText = "Nominal";
+            this.NominalColumn.Name = "NominalColumn";
+            this.NominalColumn.ReadOnly = true;
+            // 
             // ImpedanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(379, 354);
+            this.ClientSize = new System.Drawing.Size(281, 346);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -191,7 +204,7 @@
             this.Text = "Impedance";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComponentsDataGrid)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -202,11 +215,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button RemoveElementButton;
+        private System.Windows.Forms.Button AddElementButton;
+        private System.Windows.Forms.DataGridView ComponentsDataGrid;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.TextBox FrequencyTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
@@ -215,6 +228,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button ModifyButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn NominalColumn;
     }
