@@ -55,11 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Element.cs">
+    <Compile Include="AddElement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add Element.Designer.cs">
-      <DependentUpon>Add Element.cs</DependentUpon>
+    <Compile Include="AddElement.Designer.cs">
+      <DependentUpon>AddElement.cs</DependentUpon>
     </Compile>
     <Compile Include="dataBase.cs" />
     <Compile Include="ImpedanceForm.cs">
@@ -76,8 +76,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Add Element.resx">
-      <DependentUpon>Add Element.cs</DependentUpon>
+    <EmbeddedResource Include="AddElement.resx">
+      <DependentUpon>AddElement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImpedanceForm.resx">
       <DependentUpon>ImpedanceForm.cs</DependentUpon>

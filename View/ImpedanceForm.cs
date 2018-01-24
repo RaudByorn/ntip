@@ -47,7 +47,7 @@ namespace View
             }
             else
             {
-                Add_Element newForm = new Add_Element();
+                AddElement newForm = new AddElement();
                 if (newForm.ShowDialog() == DialogResult.OK)
                 {
                     try { 
@@ -84,7 +84,7 @@ namespace View
             else
             { 
                 IComponent.IComponent component = Components[ComponentsDataGrid.CurrentRow.Index];
-                Add_Element newForm = new Add_Element();
+                AddElement newForm = new AddElement();
                 newForm.ModifyValue = Convert.ToDouble(ComponentsDataGrid.CurrentRow.Cells[1].Value);
                 if (component is Resistor)
                 {
@@ -177,7 +177,7 @@ namespace View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var componentsTuple = Tuple.Create(Components, FrequencyTextBox.Text);
             saveFileDialog1.ShowDialog();
@@ -190,7 +190,7 @@ namespace View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ComponentsDataGrid.Rows.Clear();
             if (openFileDialog1.ShowDialog() != DialogResult.OK)

@@ -1,6 +1,6 @@
 ﻿namespace View
 {
-    partial class Add_Element
+    partial class AddElement
     {
         /// <summary>
         /// Required designer variable.

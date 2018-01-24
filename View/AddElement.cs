@@ -12,7 +12,7 @@ using IComponent;
 
 namespace View
 {
-    public partial class Add_Element : Form
+    public partial class AddElement : Form
     {
         /// <summary>
         /// Геттер для компонента
@@ -53,7 +53,7 @@ namespace View
         /// Функция для передачи значения между формами
         /// </summary>
         /// <param name="sender"></param>
-        public Add_Element()
+        public AddElement()
         {
             InitializeComponent();
         }
